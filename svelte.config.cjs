@@ -13,7 +13,7 @@ module.exports = {
 	},
   preprocess: {
 		postcss: {
-    	plugins: [require("tailwindcss"), require("autoprefixer")],
+    	plugins: [require('postcss-import'), require("tailwindcss"), require('postcss-preset-env')({ stage: 1 })],
 		}
 	}
 };
