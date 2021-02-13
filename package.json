@@ -13,8 +13,6 @@
 		"@sveltejs/kit": "next",
 		"@sveltejs/snowpack-config": "next",
 		"@tailwindcss/forms": "^0.2.1",
-		"@tailwindcss/ui": "^0.7.2",
-		"mdsvex": "^0.8.9",
 		"postcss": "^8.2.6",
 		"postcss-cli": "^8.3.1",
 		"postcss-import": "^14.0.0",
