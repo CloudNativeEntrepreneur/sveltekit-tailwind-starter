@@ -1,5 +1,5 @@
 const path = require('path');
-const { postcss } = require('svelte-preprocess');
+const sveltePreprocess = require('svelte-preprocess');
 
 module.exports = {
 	kit: {
@@ -11,9 +11,7 @@ module.exports = {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
 	},
-  preprocess: {
-		postcss: {
-    	plugins: [require('postcss-import'), require("tailwindcss"), require('postcss-preset-env')({ stage: 1 })],
-		}
-	}
+  preprocess: sveltePreprocess({
+		postcss: true
+}),
 };
