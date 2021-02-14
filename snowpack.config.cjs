@@ -7,19 +7,5 @@ module.exports = {
 	},
 	alias: {
 		$components: './src/components'
-	},
-	plugins: [
-		[
-			'@snowpack/plugin-svelte',
-			{
-				compilerOptions: {
-					hydratable: true
-				},
-				configFilePath: 'svelte.config.cjs',
-			}
-		],
-		[
-			"@snowpack/plugin-postcss"
-		]
-	]
+	}
 };
