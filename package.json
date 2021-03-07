@@ -10,7 +10,6 @@
 		"@rollup/pluginutils": "4.1.0",
 		"@snowpack/plugin-postcss": "1.1.0",
 		"@sveltejs/adapter-node": "next",
-		"@sveltejs/kit": "next",
 		"@sveltejs/snowpack-config": "next",
 		"@tailwindcss/forms": "0.2.1",
 		"autoprefixer": "10.2.4",
@@ -20,9 +19,11 @@
 		"postcss-load-config": "3.0.1",
 		"postcss-nested": "5.0.3",
 		"svelte": "3.32.3",
-		"svelte-preprocess": "4.6.9",
 		"tailwindcss": "2.0.3"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"@sveltejs/kit": "next",
+		"svelte-preprocess": "4.6.9"
+	}
 }
