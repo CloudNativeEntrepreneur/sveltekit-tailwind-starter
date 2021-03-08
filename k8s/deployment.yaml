@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sveltekit-app
+  labels:
+    app: sveltekit-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sveltekit-app
+  template:
+    metadata:
+      labels:
+        app: sveltekit-app
+    spec:
+      containers:
+      - name: sveltekit-app
+        image: sveltekit-app:local
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
