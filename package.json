@@ -24,6 +24,6 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/kit": "next",
-		"svelte-preprocess": "4.6.9"
+		"svelte-preprocess": "4.7.0"
 	}
 }
