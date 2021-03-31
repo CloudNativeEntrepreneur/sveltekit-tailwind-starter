@@ -8,7 +8,7 @@
 	},
 	"devDependencies": {
 		"@rollup/pluginutils": "4.1.0",
-		"@snowpack/plugin-postcss": "1.1.0",
+		"@snowpack/plugin-postcss": "1.2.2",
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/snowpack-config": "next",
 		"@tailwindcss/forms": "0.2.1",
