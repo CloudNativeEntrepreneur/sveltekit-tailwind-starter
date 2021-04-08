@@ -19,4 +19,4 @@ spec:
         image: sveltekit-app:local
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 3000
+        - containerPort: {{ .Values.service.internalPort }}

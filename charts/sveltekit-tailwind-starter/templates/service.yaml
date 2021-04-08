@@ -7,4 +7,4 @@ spec:
     app: sveltekit-app
   ports:
   # Default port used by the image
-  - port: 3000
+  - port: {{ .Values.service.internalPort }}
