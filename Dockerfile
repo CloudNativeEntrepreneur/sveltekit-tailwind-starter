@@ -10,10 +10,11 @@ WORKDIR /build
 COPY package* ./
 RUN npm ci
 
-COPY *.cjs ./
+COPY *.cjs .*ignore .*rc ./
 COPY static/ static/
 COPY src/ src/
 
+RUN npm run lint
 RUN npm run build
 RUN npm prune --production
 
@@ -23,6 +24,7 @@ WORKDIR /usr/src/app
 
 COPY --from=build /build/node_modules/ node_modules/
 COPY --from=build /build/.svelte/ .svelte/
+COPY --from=build /build/build/ build/
 COPY --from=build /build/static/ static/
 COPY --from=build /build/package* ./
 COPY --from=build /build/*.cjs ./
