@@ -1,4 +1,4 @@
-FROM node:15-alpine AS build
+FROM node:16-alpine AS build
 
 RUN apk add --update --no-cache \
         python \
@@ -18,7 +18,7 @@ RUN npm run lint
 RUN npm run build
 RUN npm prune --production
 
-FROM node:15-alpine
+FROM node:16-alpine
 
 WORKDIR /usr/src/app
 
