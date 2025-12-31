@@ -24,7 +24,7 @@
 		"postcss-import": "^14.0.1",
 		"postcss-load-config": "^3.0.1",
 		"postcss-nested": "^5.0.5",
-		"prettier": "~2.2.1",
+		"prettier": "~2.8.0",
 		"prettier-plugin-svelte": "^2.2.0",
 		"svelte": "^3.29.0",
 		"tailwindcss": "^2.1.0",
